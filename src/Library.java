@@ -13,6 +13,11 @@ public class Library {
         dvds.add (dvd);
     }
 
+    public ArrayList<DVD> getDVDs()
+    {
+        return dvds;
+    }
+
     public String listDVDs(){
         if (dvds.size() == 0){
             return "No dvds in library";

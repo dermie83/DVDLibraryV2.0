@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class DVD {
 
     private String title;
@@ -11,6 +13,7 @@ public class DVD {
         this.title = title;
 
     }
+
 
     //-------
     //getters
