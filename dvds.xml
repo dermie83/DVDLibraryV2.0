@@ -1,0 +1,13 @@
+<object-stream>
+  <list>
+    <DVD>
+      <title>Matrix</title>
+    </DVD>
+    <DVD>
+      <title>Bad Boyz</title>
+    </DVD>
+    <DVD>
+      <title>Superman</title>
+    </DVD>
+  </list>
+</object-stream>
