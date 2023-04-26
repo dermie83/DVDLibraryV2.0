@@ -66,6 +66,8 @@ public class Driver {
         System.out.println("  2) List all DVDs in library");
         System.out.println("  3) Update a DVD in library");
         System.out.println("  4) Delete a DVD from library");
+        System.out.println("  5) Save DVD");
+        System.out.println("  6) Load DVD");
         System.out.println("  0) Exit");
         System.out.print("==>> ");
         int option = input.nextInt();
@@ -91,6 +93,12 @@ public class Driver {
                 case 4:
                     deleteDVD();
                     break;
+                case 5:
+                    saveDVDs();
+                    break;
+                case 6:
+                    loadDVDs();
+                    break;
                 default:
                     System.out.println("Invalid option selected.");
                     break;
@@ -101,6 +109,28 @@ public class Driver {
             option = mainMenu();
         }
         System.out.println("Exiting... bye");
+    }
+
+    private void saveDVDs(){
+        try{
+            library.save();
+            System.out.println("DVD save to library");
+
+        }catch(Exception e) {
+            System.out.println("Error reading file "+e);
+
+        }
+    }
+
+    private void loadDVDs(){
+        try{
+            library.load();
+            System.out.println("DVDs successfully loaded from library");
+
+        }catch(Exception e) {
+            System.out.println("Error reading file "+e);
+
+        }
     }
 
 
