@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-
-
 public class Driver {
     private Scanner input = new Scanner(System.in);
 
